@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Customers</h1>
+<h1 class="title1">Listing Customers</h1>
 
-<table>
+<table class="datatable" border="1">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Mobileno</th>
-      <th>Address</th>
+      <th class="heading1">Name</th>
+      <th class="heading1">Mobileno</th>
+      <th class="heading1">Address</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -29,3 +29,10 @@
 <br>
 
 <%= link_to 'New Customer', new_customer_path %>
+<script>
+// For fluid containers
+$('.datatable').DataTable({
+  dom: "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
+  pagingType: "bootstrap"
+});
+</script>
