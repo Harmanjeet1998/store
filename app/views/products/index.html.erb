@@ -2,34 +2,29 @@
 
 <h1 class="title">Listing Products</h1>
 
-<table class="datatable" border="1">
+<div class="datatable" border="1"> </div>
   <thead>
-
-    <tr>
-      <th class="heading">Name</th>
-      <th class="heading">Cp</th>
-      <th class="heading">Sp</th>
-      <th class="heading">category</th>
-      <th class="heading">Quantity</th>
-      <th colspan="3"></th>
-    </tr>
+      <div class="heading">Name</div>
+      <div class="heading">Cp</div>
+      <div class="heading">Sp</div>
+      <div class="heading">category</div>
+      <div class="heading">Quantity</div>
+      <div colspan="3"></div>
   </thead>
 
   <tbody>
     <% @products.each do |product| %>
-      <tr>
-        <td class="name"><%= product.name %></td>
-        <td><%= product.cp %></td>
-        <td><%= product.sp %></td>
-        <td><%= product.category %></td>  
-        <td><%= product.quantity %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <div class="a"><%= product.name %></div>
+        <div class="a"><%= product.cp %></div>
+        <div class="a"><%= product.sp %></div>
+        <div class="a"><%= product.category %></div>  
+        <div class="a"><%= product.quantity %></div>
+        <div class="b"><div><%= link_to 'Show', product %></div>
+        <div><%= link_to 'Edit', edit_product_path(product) %></div>
+        <div><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></div></div>
+      
     <% end %>
   </tbody>
-</table>
 
 <br>
 
