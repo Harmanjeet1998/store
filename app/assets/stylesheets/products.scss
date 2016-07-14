@@ -2,16 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .heading{
-  color:red;
+  color:blue;
   font-size:30px;
 line-height:2;  
+font-family:serif;
+font-style:italic;
 }
 
 .title{
 color:green;
-font-size:40px;
+font-size:60px;
 line-height:30px;
+margin-left:40%;
+font-family:serif;
+font-style:italic;
+}
+.name{
+height:200px;
+width:200px;
 }
 body {
-   background-image: image-url('/assets/Texture-Desktop-Wallpaper.jpg');
+   background-image:url("2.jpg");
 }

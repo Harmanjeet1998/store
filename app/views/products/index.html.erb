@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="title">Listing Products </h1>
+<h1 class="title">Listing Products</h1>
 
 <table class="datatable" border="1">
   <thead>
@@ -9,6 +9,7 @@
       <th class="heading">Name</th>
       <th class="heading">Cp</th>
       <th class="heading">Sp</th>
+      <th class="heading">category</th>
       <th class="heading">Quantity</th>
       <th colspan="3"></th>
     </tr>
@@ -17,9 +18,10 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= product.name %></td>
+        <td class="name"><%= product.name %></td>
         <td><%= product.cp %></td>
         <td><%= product.sp %></td>
+        <td><%= product.category %></td>  
         <td><%= product.quantity %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
