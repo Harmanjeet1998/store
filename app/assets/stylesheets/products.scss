@@ -9,8 +9,8 @@ color:#3498db;
 font-family:  'Droid Serif', serif;
 }
 .a{
-width:12%;
-height:70px;
+width:20%;
+height:20%;
    display:inline-block;
 border:1px solid black;
 padding:1%;
@@ -27,6 +27,14 @@ padding:1%;
 margin-left:80%;
 margin-top:-100px;
 padding-top:10px;
+}
+.c img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+padding-left:100px;
+padding-top:-40px;
 }
 body {
   

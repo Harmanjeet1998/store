@@ -4,10 +4,9 @@
         <div><%= product.cp %></div>
         <div><%= product.sp %></div>
         <div><%= product.category %></div> 
-        <div><%= image_tag(product.image_url)%>
-    <%= product.quantity %>
-</div>  
-        <div><%= product.quantity %></div></div>
+        <div><%= product.quantity %></div>
+        <div class="c"><%= image_tag(product.image_url)%>
+         </div></div>
       
     <% end %>
 <%= link_to 'New Product', new_product_path %>

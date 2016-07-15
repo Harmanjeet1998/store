@@ -26,10 +26,9 @@ ActiveRecord::Schema.define(version: 20160715064302) do
     t.integer  "cp"
     t.integer  "sp"
     t.integer  "quantity"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string   "category"
-    t.string   "Imageupload"
     t.string   "image"
   end
 
@@ -46,7 +45,6 @@ ActiveRecord::Schema.define(version: 20160715064302) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.string   "Imageupload"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
