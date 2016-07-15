@@ -6,35 +6,31 @@
 
 .title{
 color:#3498db;
-font-family:  'Droid Serif', serif;
+font-family:  'Rouge Script';
+font-size:60px;
+margin-left:40%;
 }
-.a{
+.heading{
 width:20%;
 height:20%;
    display:inline-block;
 border:1px solid black;
-padding:4%;
+padding:3%;
 margin-left:4%;
 margin-top:37px;
-line-height:15px;
+line-height:20px;
+font-family:'Metal Mania';
+font-size:17px;
 }
-.b{
-width:15%;
-  height:20%;
-   display:block;
-border:1px solid black;
-padding:1%;
-margin-left:80%;
-margin-top:-100px;
-padding-top:10px;
-}
+
 .c img{
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 130px;
     display: inline-block;
     overflow: hidden;
 padding-left:100px;
-padding-top:-40px;
+padding-top:-60px;
+
 }
 body {
   

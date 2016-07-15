@@ -1,11 +1,9 @@
-<h1>Dukan</h1>
+<h1 class="title">Shopsoft</h1>
     <% @products.each do |product| %>
-        <div class="a" ><div><div class="c"><%= image_tag(product.image_url)%>
-         </div>
-
-<%= product.name %></div>
-        <div><%= product.cp %></div>
-        <div><%= product.sp %></div>
+        <div class="heading" ><div><div class="c"><%= image_tag(product.image_url)%>
+         </div><%= product.name %></div>
+        <div class="prise1">₹<%= product.cp %></div>
+        <div class="prise2">₹<%= product.sp %></div>
         <div><%= product.category %></div> 
         <div><%= product.quantity %></div>
         </div>
