@@ -1,27 +1,12 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.heading{
-  color:blue;
-  font-size:200%;
-line-height:2;  
-font-family:serif;
-font-style:italic;
-width:12%;
-  height:25%;
-   display:inline-block;
-border:3px solid black;
-padding:11px;
-margin-left:1%;
-}
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);    
 
 .title{
-color:green;
-font-size:400%;
-line-height:30px;
-margin-left:30%;
-font-family:serif;
-font-style:italic;
+color:#3498db;
+font-family:  'Droid Serif', serif;
 }
 .a{
 width:12%;
@@ -30,8 +15,8 @@ height:70px;
 border:1px solid black;
 padding:1%;
 margin-left:1%;
-margin-top:20px;
-
+margin-top:37px;
+line-height:15px;
 }
 .b{
 width:15%;
@@ -44,5 +29,5 @@ margin-top:-100px;
 padding-top:10px;
 }
 body {
-   background-image:url("2.jpg");
+  
 }

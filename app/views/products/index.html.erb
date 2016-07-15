@@ -1,33 +1,15 @@
-<p id="notice"><%= notice %></p>
-
-<h1 class="title">Listing Products</h1>
-
-<div class="datatable" border="1"> </div>
-  <thead>
-      <div class="heading">Name</div>
-      <div class="heading">Cp</div>
-      <div class="heading">Sp</div>
-      <div class="heading">category</div>
-      <div class="heading">Quantity</div>
-      <div colspan="3"></div>
-  </thead>
-
-  <tbody>
+<h1>Dukan</h1>
     <% @products.each do |product| %>
-        <div class="a"><%= product.name %></div>
-        <div class="a"><%= product.cp %></div>
-        <div class="a"><%= product.sp %></div>
-        <div class="a"><%= product.category %></div>  
-        <div class="a"><%= product.quantity %></div>
-        <div class="b"><div><%= link_to 'Show', product %></div>
-        <div><%= link_to 'Edit', edit_product_path(product) %></div>
-        <div><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></div></div>
+        <div class="a" ><div><%= product.name %></div>
+        <div><%= product.cp %></div>
+        <div><%= product.sp %></div>
+        <div><%= product.category %></div> 
+        <div><%= image_tag(product.image_url)%>
+    <%= product.quantity %>
+</div>  
+        <div><%= product.quantity %></div></div>
       
     <% end %>
-  </tbody>
-
-<br>
-
 <%= link_to 'New Product', new_product_path %>
 <script>
 
