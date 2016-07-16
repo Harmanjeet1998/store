@@ -1,13 +1,13 @@
 <h1 class="title">Shopsoft</h1>
     <% @products.each do |product| %>
-        <div class="heading" ><div><div class="c"><%= image_tag(product.image_url)%>
-         </div><%= product.name %></div>
+        <div class="heading" >
+        <div class="imagediv"><%= image_tag(product.image_url)%></div>
+	<div> <%= product.name %></div>
         <div class="prise1">₹<%= product.cp %></div>
         <div class="prise2">₹<%= product.sp %></div>
         <div><%= product.category %></div> 
         <div><%= product.quantity %></div>
-        </div>
-      
+</div>
     <% end %>
 <%= link_to 'New Product', new_product_path %>
 <script>

@@ -5,33 +5,34 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif);    
 
 .title{
-color:#3498db;
-font-family:  'Rouge Script';
-font-size:60px;
-margin-left:40%;
+  color:#3498db;
+  font-family:  'Rouge Script';
+  font-size:60px;
+  text-align:center;
 }
+
 .heading{
-width:20%;
-height:20%;
+   width:200px;
+   height:350px;
    display:inline-block;
-border:1px solid black;
-padding:3%;
-margin-left:4%;
-margin-top:37px;
-line-height:20px;
-font-family:'Metal Mania';
-font-size:17px;
+   padding:10px;
+   margin-left:20px; 
+   margin-bottom:20px;
+   background:white;
+   border-radius:5px;
+   box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+   vertical-align:top;
+   font-family:'Metal Mania';
+   font-size:17px;
 }
-
-.c img{
-    width: 140px;
-    height: 130px;
-    display: inline-block;
-    overflow: hidden;
-padding-left:100px;
-padding-top:-60px;
-
+.heading div { text-align:center; }
+.imagediv img{
+    width: 100%;
 }
 body {
-  
+background-image: image-url("bg.png")
+}
+.wrapper
+{
+width:20%;
 }
