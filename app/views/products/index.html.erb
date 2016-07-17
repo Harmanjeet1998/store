@@ -2,11 +2,11 @@
     <% @products.each do |product| %>
         <div class="heading" >
         <div class="imagediv"><%= image_tag(product.image_url)%></div>
-	<div> <%= product.name %></div>
-        <div class="prise1">₹<%= product.cp %></div>
-        <div class="prise2">₹<%= product.sp %></div>
-        <div><%= product.category %></div> 
-        <div><%= product.quantity %></div>
+	<div class="pname"> <%= product.name %></div>
+        <div class="prise">₹<%= product.sp %></div>
+        <div class="pcategory"><%= product.category %></div> 
+        <!--<div><%= product.quantity %></div>-->
+         <%= link_to 'Show', product %>
 </div>
     <% end %>
 <%= link_to 'New Product', new_product_path %>

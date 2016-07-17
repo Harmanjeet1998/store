@@ -28,6 +28,33 @@
 <%= image_tag(@product.image_url)%>
     <%= @product.quantity %>
 </p>
+<h2>My Order</h2>
+<% @product.myorders.each do |myorder| %>
+  <p>
+    <strong>Customer:</strong>
+    <%= myorder.customer %>
+  </p>
+ 
+  <p>
+    <strong>Credit:</strong>
+    <%= myorder.credit %>
+  </p>
+<% end %>
+<h2>Add a order:</h2>
+<%= form_for([@product, @product.myorders.build]) do |f| %>
+  <p>
+    <%= f.label :customer_name %><br>
+    <%= f.text_field :customer %>
+  </p>
+  <p>
+    <%= f.label :credit %><br>
+    <%= f.check_box :credit %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+ 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

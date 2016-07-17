@@ -6,4 +6,6 @@ class Product < ActiveRecord::Base
  validates :quantity, presence: true,
                     length: { maximum: 5 }
   mount_uploader :image, ImageUploader
+ has_many :orders, dependent: :destroy
+ has_many :myorders
 end

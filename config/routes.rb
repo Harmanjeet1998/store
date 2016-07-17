@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+root 'products#index'  
+get 'order/index'
+  get '/neworder' => 'products#neworder'
   devise_for :users
-  resources :products
-  resources :products
+  resources :products do
+	resources :myorders
+
+  end
   resources :customers
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
