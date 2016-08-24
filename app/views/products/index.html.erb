@@ -1,11 +1,13 @@
-<h1 class="title">Shopsoft</h1>
+<h1 class="title">Canteen Management</h1>
     <% @products.each do |product| %>
+<a href ""/customer"">
         <div class="heading" >
-        <div class="imagediv"><%= image_tag(product.image_url)%></div>
+        <div class="imagediv"><%= image_tag(product.image_url)%></div></a>
 	<div class="pname"> <%= product.name %></div>
         <div class="prise">₹<%= product.sp %></div>
         <div class="pcategory"><%= product.category %></div> 
         <!--<div><%= product.quantity %></div>-->
+        <!--<div><%= product.sp %></div>-->
          <%= link_to 'Show', product %>
 </div>
     <% end %>
