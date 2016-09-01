@@ -13,35 +13,12 @@
 
 ActiveRecord::Schema.define(version: 20160817063919) do
 
-  create_table "canteens", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.string   "department"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
   create_table "customers", force: :cascade do |t|
     t.string   "name"
     t.string   "mobileNo"
     t.text     "Address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "items", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.float    "price"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "menus", force: :cascade do |t|
-    t.string   "title"
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
   end
 
   create_table "myorders", force: :cascade do |t|

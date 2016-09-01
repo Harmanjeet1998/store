@@ -25,16 +25,15 @@
         <td><%= link_to 'Destroy', purchase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-<script>
-$('.datatable').DataTable({
-  dom: "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
-  pagingType: "bootstrap"
-});
-</script>
   </tbody>
 </table>
 
 <br>
 
 <%= link_to 'New Purchase', new_purchase_path %>
-
+<script>
+$('.datatable').DataTable({
+  dom: "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
+  pagingType: "bootstrap"
+});
+</script>

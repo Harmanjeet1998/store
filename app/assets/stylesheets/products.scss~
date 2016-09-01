@@ -227,7 +227,7 @@ div#menu ul ul a {
 div#menu ul ul a span {
     padding: 0 15px;
     line-height: 26px;
-    font-size: 18px;
+    font-size: 11px;
 }
 div#menu li.current ul a,
 div#menu li.current ul a span {
